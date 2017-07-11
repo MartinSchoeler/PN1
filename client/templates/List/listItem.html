@@ -1,7 +1,11 @@
 <template name="listItem">
-    <div class="list-item">
-        <div class="item-content">
-            <h3><span>{{place}}</span> <span>{{date}}</span> $<span>{{finalPrice}}</span></h3>
+        <div class="list-card item-content panel panel-default d-inline">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{place}} <div class="pull-right">{{date}}</div></h3>
+            </div>
+
+            <div class="panel-body">
+                ${{finalPrice}}
+            </div>
         </div>
-    </div>
 </template>

@@ -1,5 +1,10 @@
 <template name="Lists">
-    {{#each items}}
-        <p>{{> listItem}}</p>
-    {{/each}}
+    <button type="button" class="add-list btn btn-default pull-right">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add List
+    </button>
+    <div class="lists-content">
+        {{#each items}}
+            {{> listItem}}
+        {{/each}}
+    </div>
 </template>

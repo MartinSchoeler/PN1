@@ -4,3 +4,9 @@ Template.Lists.helpers({
         return Lists.find();
     }
 });
+
+Template.Lists.events({ 
+    'click .add-list'() { 
+         
+    } 
+});
