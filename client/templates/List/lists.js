@@ -1,3 +1,5 @@
+import swal from 'sweetalert2'
+
 
 Template.Lists.helpers({
     items: () => {
@@ -6,7 +8,13 @@ Template.Lists.helpers({
 });
 
 Template.Lists.events({ 
-    'click .add-list'() { 
-         
-    } 
+    'click .add-list'(e) {
+        e.preventDefault(); 
+        const query = {
+            place: $('#a').val(),
+            date: $('#b').val(),
+            finalPrice: $('#c').val()
+        }
+        Lists.insert(query);
+    }
 });

@@ -1,7 +1,15 @@
 <template name="Lists">
-    <button type="button" class="add-list btn btn-default pull-right">
-        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add List
-    </button>
+    <div class="form-test">
+        <form id="test">
+            <input id="a" type="text" name="place" value="">
+            <input id="b" type="text" name="date" value="">
+            <input id="c" type="text" name="price" value="">
+
+            <button type="submit" class="add-list btn btn-default pull-right">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add List
+            </button>
+        </form>
+    </div>  
     <div class="lists-content">
         {{#each items}}
             {{> listItem}}
